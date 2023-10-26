@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(45deg, 
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.3)), url(./p5.jpg);
+    opacity: .9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:transparent;
+    z-index: 2;
+}
+section nav .logo img{
+ width: 50%;
+ height: 50%;
+}
+section nav .nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section nav ul li{
+    margin-left: 20px;
+    width: auto;
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 50px;
+    list-style-type:none ;
+    transition: .5s;
+
+}
+section nav ul li:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 20px white;
+    transition: 1s;
+    transform: scale(1.2,1.2);
+}
+section nav ul li:hover a{
+    color: aqua;    
+    transition: 1s;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    transition: 1s;
+}
+
+.logo{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.logo .logo-name h3{
+ color: aliceblue;
+}
+.logo .logo-name span{
+    color: aqua;
+    margin: 0px 5px;
+}
+.searchbox input{
+    border: 2px solid white;
+    padding: 5px;
+    width: 300px;
+    height: 35px;
+    border-radius: 50px;
+    border-color:black;
+}
+
+.searchbox {
+    position: relative;
+}
+.searchbox img{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+ul{
+    border-radius: 50px;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+.link-icon img{
+    width: 30px;
+    height: 30px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10px;
+    width: 300px;
+
+}
+.my-cart-price{
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.dropdown-container{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    padding: 0px 20px;
+    cursor: pointer;
+    position: sticky;
+    top: 20px;
+}
+.dropdown-container .dropdown{
+    position: relative;
+    color: white;
+    margin: 0px 10px;
+}
+.dropdown-container .dropdown h4{
+    font-size: .7rem;
+    background-color:transparent;
+
+}
+.dropdown-container .dropdown .dropdown-list{
+    position: absolute;
+    top: 30px;
+    transition: 1s;
+}
+
+.dropdown-container .dropdown .dropdown-list li{
+    list-style-type: none;
+    z-index: 99;
+    display: none;
+}
+.dropdown-container .dropdown:hover .dropdown-list li{
+    display: inline-block;
+    visibility: visible;
+    z-index: 99;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 2px;
+    background-color: rgb(66, 64, 64);
+    transition: 2s;
+}
+
+
+.main-content .slide-container{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(227, 232, 232) ;
+}
+.slide-container img{
+    width: 95%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+}
+.myslide{
+    display: none;
+}

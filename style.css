@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(45deg, 
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.3)), url(./p2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(4px);
+    z-index: 1;
+}
+.container form{
+    padding: 2% 8% 6%;
+    background:radial-gradient(rgb(79, 78, 80,.7),rgb(0, 0, 0,.7));
+    border-radius:10% ;
+    box-shadow: 0px 0px 10px black;
+}
+.container h1{
+ color: blue;
+ font-weight: 400;
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.container input{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+    border:none;
+    font-size: 1em;
+}
+#signup{
+    margin: 20px 5px;
+    padding: 5px;
+    border-radius: 50px;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+#signup:hover{
+ opacity: .5;
+}
+.child p{
+    color: red;
+    height: 10px;
+}
+p{
+    margin: 5px;
+    padding: 10px;
+    color: white ;
+    font-size: .9rem;
+}
+
+span{
+    margin: 0 3px;
+}
+span a{
+    text-decoration: none;
+    color: blue;
+}
+#message {
+    display:none;
+    color: #000;
+  }
+  .pp{
+    display: none;
+  }
+  .cp{
+    display: none;
+  }
+  #message span {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    border: green 2px solid;
+  }
+  
+  
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    background-color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signin-container container">
+        <form action="home.html">
+            <h1>Sign in</h1>
+            <div class="child">
+                <input type="text" id="username" placeholder="user name" required>
+            </div>
+            <div class="child">
+                <input type="password" id="" placeholder="password" required >
+            </div>
+            
+            <button type="button" id="signup">Sign in</button>
+            <p>If u don't have account<span><a class="signup-page" href="index.html">Sign up</a></span>here</p>
+        </form>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+    </div>
+
+</body>
+</html>
